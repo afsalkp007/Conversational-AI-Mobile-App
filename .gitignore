@@ -1,0 +1,9 @@
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+
+# Secrets
+AI-app/Secrets.plist
+
+.DS_Store
