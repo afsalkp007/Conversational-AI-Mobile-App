@@ -4,7 +4,7 @@ import Combine
 
 // MARK: - Test Doubles
 
-final class MockOpenAIService: OpenAIServicing {
+final class MockChatLoader: ChatLoader {
     indirect enum Behavior {
         case succeed(String)
         case fail(Error)
@@ -17,7 +17,7 @@ final class MockOpenAIService: OpenAIServicing {
         self.behavior = behavior
     }
 
-    func sendMessage(messages: [Message]) async throws -> String {
+    func loadResponse(for messages: [Message]) async throws -> String {
         switch behavior {
         case .succeed(let text):
             return text
@@ -26,7 +26,7 @@ final class MockOpenAIService: OpenAIServicing {
         case .delay(let ms, let then):
             try await Task.sleep(nanoseconds: ms * 1_000_000)
             self.behavior = then
-            return try await sendMessage(messages: messages)
+            return try await loadResponse(for: messages)
         }
     }
 }
@@ -77,12 +77,12 @@ final class MockSpeechSynthesizer: SpeechSynthesizing {
 final class ConversationViewModelTests: XCTestCase {
     @MainActor
     private func makeViewModel(
-        aiBehavior: MockOpenAIService.Behavior = .succeed("Hi!"),
+        aiBehavior: MockChatLoader.Behavior = .succeed("Hi!"),
         recognizer: MockSpeechRecognizer = MockSpeechRecognizer(),
         synthesizer: MockSpeechSynthesizer = MockSpeechSynthesizer()
     ) -> (ConversationViewModel, MockSpeechRecognizer, MockSpeechSynthesizer) {
         let vm = ConversationUIComposer.conversationComposedWith(
-            aiService: MockOpenAIService(behavior: aiBehavior),
+            aiService: MockChatLoader(behavior: aiBehavior),
             speechRecognizer: recognizer,
             speechSynthesizer: synthesizer
         )
