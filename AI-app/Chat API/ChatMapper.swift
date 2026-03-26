@@ -1,7 +1,7 @@
 import Foundation
 
 public enum ChatMapper {
-    public enum Error: Swift.Error {
+    public enum Error: Swift.Error, Equatable {
         case invalidData
         case apiError(statusCode: Int, message: String?, type: String?)
     }

@@ -6,7 +6,7 @@ public final class RemoteChatLoader: ChatLoader {
     private let client: HTTPClient
     private let model: String
 
-    public enum Error: Swift.Error {
+    public enum Error: Swift.Error, Equatable {
         case connectivity
         case invalidData
     }
@@ -39,6 +39,8 @@ public final class RemoteChatLoader: ChatLoader {
 
         do {
             return try ChatMapper.map(data, from: response)
+        } catch ChatMapper.Error.invalidData {
+            throw Error.invalidData
         } catch {
             throw error
         }

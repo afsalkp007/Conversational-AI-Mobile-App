@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F48646202F755AEF00009E1D /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461F2F755AEF00009E1D /* URLSessionHTTPClientTests.swift */; };
+		F48646212F755AEF00009E1D /* ChatMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461D2F755AEF00009E1D /* ChatMapperTests.swift */; };
+		F48646222F755AEF00009E1D /* ChatEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461C2F755AEF00009E1D /* ChatEndpointTests.swift */; };
+		F48646232F755AEF00009E1D /* RemoteChatLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461E2F755AEF00009E1D /* RemoteChatLoaderTests.swift */; };
 		F48AAF822F754E3A00B0FF26 /* RemoteChatLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */; };
 		F48AAF832F754E3A00B0FF26 /* ChatEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */; };
 		F48AAF842F754E3A00B0FF26 /* ChatMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */; };
@@ -47,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F486461C2F755AEF00009E1D /* ChatEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEndpointTests.swift; sourceTree = "<group>"; };
+		F486461D2F755AEF00009E1D /* ChatMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapperTests.swift; sourceTree = "<group>"; };
+		F486461E2F755AEF00009E1D /* RemoteChatLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteChatLoaderTests.swift; sourceTree = "<group>"; };
+		F486461F2F755AEF00009E1D /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEndpoint.swift; sourceTree = "<group>"; };
 		F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapper.swift; sourceTree = "<group>"; };
 		F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteChatLoader.swift; sourceTree = "<group>"; };
@@ -196,6 +204,10 @@
 			isa = PBXGroup;
 			children = (
 				F4AB09D42EDB78CC0074CBBC /* ConversationViewModelTests.swift */,
+				F486461C2F755AEF00009E1D /* ChatEndpointTests.swift */,
+				F486461D2F755AEF00009E1D /* ChatMapperTests.swift */,
+				F486461E2F755AEF00009E1D /* RemoteChatLoaderTests.swift */,
+				F486461F2F755AEF00009E1D /* URLSessionHTTPClientTests.swift */,
 			);
 			path = "AI-appTests";
 			sourceTree = "<group>";
@@ -361,6 +373,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4AB0A2A2EDB79CE0074CBBC /* ConversationViewModelTests.swift in Sources */,
+				F48646202F755AEF00009E1D /* URLSessionHTTPClientTests.swift in Sources */,
+				F48646212F755AEF00009E1D /* ChatMapperTests.swift in Sources */,
+				F48646222F755AEF00009E1D /* ChatEndpointTests.swift in Sources */,
+				F48646232F755AEF00009E1D /* RemoteChatLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

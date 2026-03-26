@@ -107,8 +107,18 @@ final class ConversationViewModelTests: XCTestCase {
         // State should be processing immediately after sending
         XCTAssertEqual(viewModel.state, .processing)
 
-        // Allow async task to finish and append assistant response.
-        try? await Task.sleep(nanoseconds: 80 * 1_000_000)
+        // Wait deterministically for the state to bounce from processing to speaking
+        let exp = expectation(description: "Wait for state transition to speaking")
+        var cancellable: AnyCancellable?
+        cancellable = viewModel.$state.sink { state in
+            if state == .speaking {
+                exp.fulfill()
+            }
+        }
+        
+        await fulfillment(of: [exp], timeout: 1.0)
+        cancellable?.cancel()
+        
         XCTAssertEqual(viewModel.messages.count, 2)
         XCTAssertEqual(viewModel.messages.last?.role, .assistant)
         XCTAssertEqual(viewModel.messages.last?.content, "Hello back")
@@ -119,7 +129,18 @@ final class ConversationViewModelTests: XCTestCase {
         let (viewModel, _, synthesizer) = makeViewModel(aiBehavior: .succeed("Done"))
         viewModel.sendMessage("Hi")
 
-        try? await Task.sleep(nanoseconds: 10_000_000)
+        // Wait deterministically for the state to bounce from processing to speaking
+        let exp = expectation(description: "Wait for state transition to speaking")
+        var cancellable: AnyCancellable?
+        cancellable = viewModel.$state.sink { state in
+            if state == .speaking {
+                exp.fulfill()
+            }
+        }
+        
+        await fulfillment(of: [exp], timeout: 1.0)
+        cancellable?.cancel()
+        
         XCTAssertEqual(viewModel.state, .speaking)
         synthesizer.complete()
         XCTAssertEqual(viewModel.state, .idle)
