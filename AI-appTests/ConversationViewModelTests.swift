@@ -1,4 +1,4 @@
-@testable import AI_app
+import AI_app
 import XCTest
 import Combine
 
@@ -119,7 +119,7 @@ final class ConversationViewModelTests: XCTestCase {
         let (viewModel, _, synthesizer) = makeViewModel(aiBehavior: .succeed("Done"))
         viewModel.sendMessage("Hi")
 
-        await Task.yield()
+        try? await Task.sleep(nanoseconds: 10_000_000)
         XCTAssertEqual(viewModel.state, .speaking)
         synthesizer.complete()
         XCTAssertEqual(viewModel.state, .idle)

@@ -9,8 +9,8 @@ import Combine
 
 @MainActor
 public class ConversationViewModel: ObservableObject {
-    @Published var messages: [Message] = []
-    @Published var state: ChatState = .idle
+    @Published public var messages: [Message] = []
+    @Published public var state: ChatState = .idle
     @Published var currentTranscript: String = ""
 
     /// Set by ConversationUIComposer — never set directly in views.
@@ -23,11 +23,11 @@ public class ConversationViewModel: ObservableObject {
         delegate?.didRequestStartRecording()
     }
 
-    func stopRecording() {
+    public func stopRecording() {
         delegate?.didRequestStopRecording()
     }
 
-    func sendMessage(_ text: String) {
+    public func sendMessage(_ text: String) {
         delegate?.didRequestSendMessage(text)
     }
 
