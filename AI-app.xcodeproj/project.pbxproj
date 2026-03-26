@@ -11,6 +11,9 @@
 		F48646212F755AEF00009E1D /* ChatMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461D2F755AEF00009E1D /* ChatMapperTests.swift */; };
 		F48646222F755AEF00009E1D /* ChatEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461C2F755AEF00009E1D /* ChatEndpointTests.swift */; };
 		F48646232F755AEF00009E1D /* RemoteChatLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461E2F755AEF00009E1D /* RemoteChatLoaderTests.swift */; };
+		F48646272F755EE300009E1D /* MockSpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48646262F755EE300009E1D /* MockSpeechRecognizer.swift */; };
+		F48646292F755F0A00009E1D /* MockSpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48646282F755F0A00009E1D /* MockSpeechSynthesizer.swift */; };
+		F486462B2F755F4B00009E1D /* MockChatLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486462A2F755F4B00009E1D /* MockChatLoader.swift */; };
 		F48AAF822F754E3A00B0FF26 /* RemoteChatLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */; };
 		F48AAF832F754E3A00B0FF26 /* ChatEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */; };
 		F48AAF842F754E3A00B0FF26 /* ChatMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */; };
@@ -55,6 +58,9 @@
 		F486461D2F755AEF00009E1D /* ChatMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapperTests.swift; sourceTree = "<group>"; };
 		F486461E2F755AEF00009E1D /* RemoteChatLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteChatLoaderTests.swift; sourceTree = "<group>"; };
 		F486461F2F755AEF00009E1D /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		F48646262F755EE300009E1D /* MockSpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeechRecognizer.swift; sourceTree = "<group>"; };
+		F48646282F755F0A00009E1D /* MockSpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeechSynthesizer.swift; sourceTree = "<group>"; };
+		F486462A2F755F4B00009E1D /* MockChatLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChatLoader.swift; sourceTree = "<group>"; };
 		F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEndpoint.swift; sourceTree = "<group>"; };
 		F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapper.swift; sourceTree = "<group>"; };
 		F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteChatLoader.swift; sourceTree = "<group>"; };
@@ -105,6 +111,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F48646252F755ED800009E1D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F486462A2F755F4B00009E1D /* MockChatLoader.swift */,
+				F48646262F755EE300009E1D /* MockSpeechRecognizer.swift */,
+				F48646282F755F0A00009E1D /* MockSpeechSynthesizer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F48AAF812F754E3A00B0FF26 /* Chat API */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +219,7 @@
 		F4AB0A222EDB79B70074CBBC /* AI-appTests */ = {
 			isa = PBXGroup;
 			children = (
+				F48646252F755ED800009E1D /* Helpers */,
 				F4AB09D42EDB78CC0074CBBC /* ConversationViewModelTests.swift */,
 				F486461C2F755AEF00009E1D /* ChatEndpointTests.swift */,
 				F486461D2F755AEF00009E1D /* ChatMapperTests.swift */,
@@ -372,8 +389,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F486462B2F755F4B00009E1D /* MockChatLoader.swift in Sources */,
 				F4AB0A2A2EDB79CE0074CBBC /* ConversationViewModelTests.swift in Sources */,
+				F48646272F755EE300009E1D /* MockSpeechRecognizer.swift in Sources */,
 				F48646202F755AEF00009E1D /* URLSessionHTTPClientTests.swift in Sources */,
+				F48646292F755F0A00009E1D /* MockSpeechSynthesizer.swift in Sources */,
 				F48646212F755AEF00009E1D /* ChatMapperTests.swift in Sources */,
 				F48646222F755AEF00009E1D /* ChatEndpointTests.swift in Sources */,
 				F48646232F755AEF00009E1D /* RemoteChatLoaderTests.swift in Sources */,
