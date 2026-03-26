@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Conversation/Conversation.xcodeproj">
+      location = "container:../Conversation/Conversation.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ConversationApp/ConversationApp.xcodeproj">
+      location = "container:ConversationApp.xcodeproj">
    </FileRef>
 </Workspace>
