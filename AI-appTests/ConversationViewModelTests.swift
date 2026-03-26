@@ -1,4 +1,4 @@
-@testable import AIAppFeature
+import AIAppFeature
 import XCTest
 import Combine
 
