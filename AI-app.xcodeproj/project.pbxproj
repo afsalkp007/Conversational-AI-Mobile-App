@@ -7,24 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F48AAF822F754E3A00B0FF26 /* RemoteChatLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */; };
+		F48AAF832F754E3A00B0FF26 /* ChatEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */; };
+		F48AAF842F754E3A00B0FF26 /* ChatMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */; };
+		F48AAF872F754E6400B0FF26 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF862F754E6400B0FF26 /* Message.swift */; };
+		F48AAF882F754E6400B0FF26 /* ChatLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF852F754E6400B0FF26 /* ChatLoader.swift */; };
+		F48AAF8A2F754E8300B0FF26 /* ChatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF892F754E8300B0FF26 /* ChatState.swift */; };
+		F48AAF8E2F754EE600B0FF26 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF8B2F754EE600B0FF26 /* HTTPClient.swift */; };
+		F48AAF8F2F754EE600B0FF26 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF8C2F754EE600B0FF26 /* URLSessionHTTPClient.swift */; };
 		F4AB09AE2EDB69890074CBBC /* AI_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09AD2EDB69890074CBBC /* AI_appApp.swift */; };
-		F4C0A101A1B2C3D4E5F60101 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */; };
 		F4AB09B22EDB698B0074CBBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AB09B12EDB698B0074CBBC /* Assets.xcassets */; };
 		F4AB09B52EDB698B0074CBBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AB09B42EDB698B0074CBBC /* Preview Assets.xcassets */; };
 		F4AB09C22EDB69AB0074CBBC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F4AB09BD2EDB69AA0074CBBC /* README.md */; };
-		F4C0A105A1B2C3D4E5F60105 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */; };
 		F4AB09D02EDB78B00074CBBC /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09CD2EDB78B00074CBBC /* SpeechSynthesizer.swift */; };
-		F4AB09D12EDB78B00074CBBC /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09CE2EDB78B00074CBBC /* OpenAIService.swift */; };
 		F4AB09D22EDB78B00074CBBC /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09CF2EDB78B00074CBBC /* SpeechRecognizer.swift */; };
-		F4C0A103A1B2C3D4E5F60103 /* ServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0A102A1B2C3D4E5F60103 /* ServiceProtocols.swift */; };
 		F4AB09D82EDB78E40074CBBC /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09D72EDB78E40074CBBC /* ConversationViewModel.swift */; };
 		F4AB09DE2EDB79000074CBBC /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09DA2EDB79000074CBBC /* ChatView.swift */; };
 		F4AB09DF2EDB79000074CBBC /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09DB2EDB79000074CBBC /* BubbleView.swift */; };
 		F4AB09E02EDB79000074CBBC /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09DC2EDB79000074CBBC /* ControlsView.swift */; };
 		F4AB09E12EDB79000074CBBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09DD2EDB79000074CBBC /* ContentView.swift */; };
-		F4AB09E52EDB79190074CBBC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09E32EDB79190074CBBC /* Message.swift */; };
-		F4AB09E62EDB79190074CBBC /* ChatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09E42EDB79190074CBBC /* ChatState.swift */; };
 		F4AB0A2A2EDB79CE0074CBBC /* ConversationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09D42EDB78CC0074CBBC /* ConversationViewModelTests.swift */; };
+		F4C0A101A1B2C3D4E5F60101 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */; };
+		F4C0A105A1B2C3D4E5F60105 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */; };
+		F4RE0001A1B2C3D4E5F60001 /* ChatServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0000A1B2C3D4E5F60001 /* ChatServiceProtocols.swift */; };
+		F4RE0003A1B2C3D4E5F60003 /* ConversationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0002A1B2C3D4E5F60002 /* ConversationPresenter.swift */; };
+		F4RE0005A1B2C3D4E5F60005 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0004A1B2C3D4E5F60004 /* WeakRefVirtualProxy.swift */; };
+		F4RE0007A1B2C3D4E5F60007 /* ConversationPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0006A1B2C3D4E5F60006 /* ConversationPresentationAdapter.swift */; };
+		F4RE0009A1B2C3D4E5F60009 /* ConversationUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0008A1B2C3D4E5F60008 /* ConversationUIComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,27 +47,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEndpoint.swift; sourceTree = "<group>"; };
+		F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapper.swift; sourceTree = "<group>"; };
+		F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteChatLoader.swift; sourceTree = "<group>"; };
+		F48AAF852F754E6400B0FF26 /* ChatLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLoader.swift; sourceTree = "<group>"; };
+		F48AAF862F754E6400B0FF26 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F48AAF892F754E8300B0FF26 /* ChatState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatState.swift; sourceTree = "<group>"; };
+		F48AAF8B2F754EE600B0FF26 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		F48AAF8C2F754EE600B0FF26 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		F4AB09AA2EDB69890074CBBC /* AI-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AB09AD2EDB69890074CBBC /* AI_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_appApp.swift; sourceTree = "<group>"; };
-		F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		F4AB09B12EDB698B0074CBBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4AB09B42EDB698B0074CBBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4AB09BD2EDB69AA0074CBBC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F4AB09C72EDB753E0074CBBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
 		F4AB09CD2EDB78B00074CBBC /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
-		F4AB09CE2EDB78B00074CBBC /* OpenAIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		F4AB09CF2EDB78B00074CBBC /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
-		F4C0A102A1B2C3D4E5F60103 /* ServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocols.swift; sourceTree = "<group>"; };
 		F4AB09D42EDB78CC0074CBBC /* ConversationViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewModelTests.swift; sourceTree = "<group>"; };
 		F4AB09D72EDB78E40074CBBC /* ConversationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
 		F4AB09DA2EDB79000074CBBC /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		F4AB09DB2EDB79000074CBBC /* BubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		F4AB09DC2EDB79000074CBBC /* ControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		F4AB09DD2EDB79000074CBBC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F4AB09E32EDB79190074CBBC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		F4AB09E42EDB79190074CBBC /* ChatState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatState.swift; sourceTree = "<group>"; };
 		F4AB0A212EDB79B70074CBBC /* AI-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
+		F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		F4RE0000A1B2C3D4E5F60001 /* ChatServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServiceProtocols.swift; sourceTree = "<group>"; };
+		F4RE0002A1B2C3D4E5F60002 /* ConversationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationPresenter.swift; sourceTree = "<group>"; };
+		F4RE0004A1B2C3D4E5F60004 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
+		F4RE0006A1B2C3D4E5F60006 /* ConversationPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationPresentationAdapter.swift; sourceTree = "<group>"; };
+		F4RE0008A1B2C3D4E5F60008 /* ConversationUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationUIComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +97,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F48AAF812F754E3A00B0FF26 /* Chat API */ = {
+			isa = PBXGroup;
+			children = (
+				F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */,
+				F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */,
+				F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */,
+			);
+			path = "Chat API";
+			sourceTree = "<group>";
+		};
+		F48AAF8D2F754EE600B0FF26 /* Shared API */ = {
+			isa = PBXGroup;
+			children = (
+				F48AAF8B2F754EE600B0FF26 /* HTTPClient.swift */,
+				F48AAF8C2F754EE600B0FF26 /* URLSessionHTTPClient.swift */,
+			);
+			path = "Shared API";
+			sourceTree = "<group>";
+		};
 		F4AB09A12EDB69890074CBBC = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +140,11 @@
 				F4AB09AD2EDB69890074CBBC /* AI_appApp.swift */,
 				F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */,
 				F4AB09BD2EDB69AA0074CBBC /* README.md */,
-				F4AB09E22EDB79100074CBBC /* Models */,
+				F48AAF8D2F754EE600B0FF26 /* Shared API */,
+				F48AAF812F754E3A00B0FF26 /* Chat API */,
+				F4RE00A0A1B2C3D4E5F60010 /* Chat Feature */,
+				F4RE00A1A1B2C3D4E5F60011 /* Chat Presentation */,
+				F4RE00A2A1B2C3D4E5F60012 /* Composition */,
 				F4AB09D92EDB78F80074CBBC /* Views */,
 				F4AB09D62EDB78D90074CBBC /* ViewModels */,
 				F4AB09CC2EDB78930074CBBC /* Services */,
@@ -125,10 +166,8 @@
 		F4AB09CC2EDB78930074CBBC /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F4AB09CE2EDB78B00074CBBC /* OpenAIService.swift */,
 				F4AB09CF2EDB78B00074CBBC /* SpeechRecognizer.swift */,
 				F4AB09CD2EDB78B00074CBBC /* SpeechSynthesizer.swift */,
-				F4C0A102A1B2C3D4E5F60103 /* ServiceProtocols.swift */,
 				F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */,
 			);
 			path = Services;
@@ -153,21 +192,41 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F4AB09E22EDB79100074CBBC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F4AB09E42EDB79190074CBBC /* ChatState.swift */,
-				F4AB09E32EDB79190074CBBC /* Message.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		F4AB0A222EDB79B70074CBBC /* AI-appTests */ = {
 			isa = PBXGroup;
 			children = (
 				F4AB09D42EDB78CC0074CBBC /* ConversationViewModelTests.swift */,
 			);
 			path = "AI-appTests";
+			sourceTree = "<group>";
+		};
+		F4RE00A0A1B2C3D4E5F60010 /* Chat Feature */ = {
+			isa = PBXGroup;
+			children = (
+				F4RE0000A1B2C3D4E5F60001 /* ChatServiceProtocols.swift */,
+				F48AAF852F754E6400B0FF26 /* ChatLoader.swift */,
+				F48AAF862F754E6400B0FF26 /* Message.swift */,
+			);
+			path = "Chat Feature";
+			sourceTree = "<group>";
+		};
+		F4RE00A1A1B2C3D4E5F60011 /* Chat Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F4RE0002A1B2C3D4E5F60002 /* ConversationPresenter.swift */,
+				F48AAF892F754E8300B0FF26 /* ChatState.swift */,
+			);
+			path = "Chat Presentation";
+			sourceTree = "<group>";
+		};
+		F4RE00A2A1B2C3D4E5F60012 /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				F4RE0004A1B2C3D4E5F60004 /* WeakRefVirtualProxy.swift */,
+				F4RE0006A1B2C3D4E5F60006 /* ConversationPresentationAdapter.swift */,
+				F4RE0008A1B2C3D4E5F60008 /* ConversationUIComposer.swift */,
+			);
+			path = Composition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,19 +331,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4AB09D02EDB78B00074CBBC /* SpeechSynthesizer.swift in Sources */,
+				F48AAF8A2F754E8300B0FF26 /* ChatState.swift in Sources */,
 				F4C0A105A1B2C3D4E5F60105 /* AudioSessionManager.swift in Sources */,
 				F4AB09E02EDB79000074CBBC /* ControlsView.swift in Sources */,
+				F48AAF872F754E6400B0FF26 /* Message.swift in Sources */,
+				F48AAF882F754E6400B0FF26 /* ChatLoader.swift in Sources */,
 				F4AB09D82EDB78E40074CBBC /* ConversationViewModel.swift in Sources */,
 				F4AB09DF2EDB79000074CBBC /* BubbleView.swift in Sources */,
 				F4AB09D22EDB78B00074CBBC /* SpeechRecognizer.swift in Sources */,
 				F4AB09AE2EDB69890074CBBC /* AI_appApp.swift in Sources */,
 				F4C0A101A1B2C3D4E5F60101 /* AppSecrets.swift in Sources */,
-				F4AB09E52EDB79190074CBBC /* Message.swift in Sources */,
-				F4AB09E62EDB79190074CBBC /* ChatState.swift in Sources */,
 				F4AB09E12EDB79000074CBBC /* ContentView.swift in Sources */,
 				F4AB09DE2EDB79000074CBBC /* ChatView.swift in Sources */,
-				F4AB09D12EDB78B00074CBBC /* OpenAIService.swift in Sources */,
-				F4C0A103A1B2C3D4E5F60103 /* ServiceProtocols.swift in Sources */,
+				F4RE0001A1B2C3D4E5F60001 /* ChatServiceProtocols.swift in Sources */,
+				F4RE0003A1B2C3D4E5F60003 /* ConversationPresenter.swift in Sources */,
+				F4RE0005A1B2C3D4E5F60005 /* WeakRefVirtualProxy.swift in Sources */,
+				F4RE0007A1B2C3D4E5F60007 /* ConversationPresentationAdapter.swift in Sources */,
+				F4RE0009A1B2C3D4E5F60009 /* ConversationUIComposer.swift in Sources */,
+				F48AAF8E2F754EE600B0FF26 /* HTTPClient.swift in Sources */,
+				F48AAF8F2F754EE600B0FF26 /* URLSessionHTTPClient.swift in Sources */,
+				F48AAF822F754E3A00B0FF26 /* RemoteChatLoader.swift in Sources */,
+				F48AAF832F754E3A00B0FF26 /* ChatEndpoint.swift in Sources */,
+				F48AAF842F754E3A00B0FF26 /* ChatMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,9 +494,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI-app/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AI-app/Info.plist";
@@ -444,6 +513,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.afsal.InstagramLikeFeed.AI-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,9 +525,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI-app/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AI-app/Info.plist";
@@ -473,6 +544,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.afsal.InstagramLikeFeed.AI-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

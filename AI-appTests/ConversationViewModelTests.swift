@@ -2,8 +2,10 @@
 import XCTest
 import Combine
 
+// MARK: - Test Doubles
+
 final class MockOpenAIService: OpenAIServicing {
-    enum Behavior {
+    indirect enum Behavior {
         case succeed(String)
         case fail(Error)
         case delay(ms: UInt64, then: Behavior)
@@ -67,6 +69,11 @@ final class MockSpeechSynthesizer: SpeechSynthesizing {
     }
 }
 
+// MARK: - ConversationViewModel Integration Tests
+// Tests assemble the full stack via ConversationUIComposer (analogous to how
+// the Feed App tests assemble through FeedUIComposer) so the composition path
+// is always exercised alongside the individual unit behaviours.
+
 final class ConversationViewModelTests: XCTestCase {
     @MainActor
     private func makeViewModel(
@@ -74,29 +81,29 @@ final class ConversationViewModelTests: XCTestCase {
         recognizer: MockSpeechRecognizer = MockSpeechRecognizer(),
         synthesizer: MockSpeechSynthesizer = MockSpeechSynthesizer()
     ) -> (ConversationViewModel, MockSpeechRecognizer, MockSpeechSynthesizer) {
-        let vm = ConversationViewModel(
-            openAIService: MockOpenAIService(behavior: aiBehavior),
+        let vm = ConversationUIComposer.conversationComposedWith(
+            aiService: MockOpenAIService(behavior: aiBehavior),
             speechRecognizer: recognizer,
             speechSynthesizer: synthesizer
         )
         return (vm, recognizer, synthesizer)
     }
-    
+
     @MainActor func testInitialState() {
         let (viewModel, _, _) = makeViewModel()
         XCTAssertEqual(viewModel.state, .idle)
         XCTAssertTrue(viewModel.messages.isEmpty)
     }
-    
+
     @MainActor func testSendMessageUpdatesStateImmediately() async {
         let (viewModel, _, _) = makeViewModel(aiBehavior: .delay(ms: 50, then: .succeed("Hello back")))
         let testMessage = "Hello"
         viewModel.sendMessage(testMessage)
-        
+
         XCTAssertEqual(viewModel.messages.count, 1)
         XCTAssertEqual(viewModel.messages.first?.content, testMessage)
         XCTAssertEqual(viewModel.messages.first?.role, .user)
-        
+
         // State should be processing immediately after sending
         XCTAssertEqual(viewModel.state, .processing)
 
@@ -126,3 +133,4 @@ final class ConversationViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.state, .idle)
     }
 }
+

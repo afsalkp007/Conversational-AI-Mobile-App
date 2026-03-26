@@ -1,11 +1,9 @@
 import Foundation
 import Combine
 
-protocol OpenAIServicing {
-    func sendMessage(messages: [Message]) async throws -> String
-}
+// MARK: - Speech
 
-protocol SpeechRecognizing: AnyObject, ObservableObject {
+public protocol SpeechRecognizing: AnyObject, ObservableObject {
     var transcriptPublisher: AnyPublisher<String, Never> { get }
     var transcript: String { get }
 
@@ -14,9 +12,8 @@ protocol SpeechRecognizing: AnyObject, ObservableObject {
     func stopRecording()
 }
 
-protocol SpeechSynthesizing: AnyObject {
+public protocol SpeechSynthesizing: AnyObject {
     var onComplete: (() -> Void)? { get set }
     func speak(_ text: String)
     func stop()
 }
-

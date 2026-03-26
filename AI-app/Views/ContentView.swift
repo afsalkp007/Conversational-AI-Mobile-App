@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var viewModel = ConversationViewModel()
-    
+    @ObservedObject var viewModel: ConversationViewModel
+
     var body: some View {
         ZStack {
             LinearGradient(
@@ -47,3 +47,4 @@ struct ContentView: View {
         .padding(.bottom, 10)
     }
 }
+

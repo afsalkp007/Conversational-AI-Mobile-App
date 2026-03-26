@@ -28,6 +28,8 @@ class SpeechSynthesizer: NSObject, AVSpeechSynthesizerDelegate, SpeechSynthesizi
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         AudioSessionManager.shared.deactivate()
-        onComplete?()
+        DispatchQueue.main.async { [weak self] in
+            self?.onComplete?()
+        }
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-enum ChatState: Equatable {
+public enum ChatState: Equatable {
     case idle
     case listening
     case processing

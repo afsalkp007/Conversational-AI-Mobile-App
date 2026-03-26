@@ -1,123 +1,67 @@
 import Foundation
 import Combine
 
+// MARK: - ConversationViewModel
+// A slim @ObservableObject responsible only for holding display state.
+// All business logic and service coordination lives in ConversationPresentationAdapter.
+// User actions are forwarded to `delegate` (set by ConversationUIComposer).
+// Presentation updates arrive via the Presenter through view-protocol conformances below.
+
 @MainActor
-class ConversationViewModel: ObservableObject {
+public class ConversationViewModel: ObservableObject {
     @Published var messages: [Message] = []
     @Published var state: ChatState = .idle
     @Published var currentTranscript: String = ""
-    
-    // Dependencies
-    private let openAIService: any OpenAIServicing
-    private let speechRecognizer: any SpeechRecognizing
-    private let speechSynthesizer: any SpeechSynthesizing
-    
-    private var cancellables = Set<AnyCancellable>()
-    private var requestTask: Task<Void, Never>?
-    
-    init(
-        openAIService: any OpenAIServicing,
-        speechRecognizer: any SpeechRecognizing = SpeechRecognizer(),
-        speechSynthesizer: any SpeechSynthesizing = SpeechSynthesizer()
-    ) {
-        self.openAIService = openAIService
-        self.speechRecognizer = speechRecognizer
-        self.speechSynthesizer = speechSynthesizer
-        setupBindings()
+
+    /// Set by ConversationUIComposer — never set directly in views.
+    /// Held strongly because the adapter must outlive the function scope of the Composer.
+    var delegate: (any ConversationViewModelDelegate)?
+
+    // MARK: - User actions (forwarded to delegate)
+
+    func startRecording() {
+        delegate?.didRequestStartRecording()
     }
 
-    convenience init() {
-        let apiKey = AppSecrets.openAIAPIKey ?? ""
-        self.init(openAIService: OpenAIService(apiKey: apiKey))
-        if apiKey.isEmpty {
-            self.state = .error("Missing OpenAI API key. See README for setup.")
-        }
-    }
-    
-    private func setupBindings() {
-        // Update currentTranscript live as user speaks
-        speechRecognizer.transcriptPublisher
-            .assign(to: \.currentTranscript, on: self)
-            .store(in: &cancellables)
-            
-        // When speech synthesizer finishes, go back to idle
-        speechSynthesizer.onComplete = { [weak self] in
-            DispatchQueue.main.async {
-                self?.state = .idle
-            }
-        }
-    }
-    
-    func startRecording() {
-        // Stop any current speech
-        speechSynthesizer.stop()
-        cancelPendingRequest()
-        
-        do {
-            try speechRecognizer.startRecording()
-            state = .listening
-        } catch {
-            state = .error("Failed to start recording: \(error.localizedDescription)")
-        }
-    }
-    
     func stopRecording() {
-        speechRecognizer.stopRecording()
-        let text = speechRecognizer.transcript
-        
-        guard text.trimmingCharacters(in: .whitespacesAndNewlines).count >= 2 else {
-            state = .idle
-            return
-        }
-        
-        sendMessage(text)
+        delegate?.didRequestStopRecording()
     }
-    
+
     func sendMessage(_ text: String) {
-        if case .error = state, AppSecrets.openAIAPIKey == nil {
-            state = .error("Missing OpenAI API key. See README for setup.")
-            return
-        }
-        let userMessage = Message(role: .user, content: text)
-        messages.append(userMessage)
-        state = .processing
-        
-        requestTask = Task {
-            do {
-                let responseText = try await openAIService.sendMessage(messages: messages)
-                try Task.checkCancellation()
-                let aiMessage = Message(role: .assistant, content: responseText)
-                messages.append(aiMessage)
-                
-                state = .speaking
-                speechSynthesizer.speak(responseText)
-            } catch {
-                if Task.isCancelled {
-                    state = .idle
-                } else {
-                    state = .error(error.localizedDescription)
-                }
-            }
-        }
+        delegate?.didRequestSendMessage(text)
     }
 
     func resetConversation() {
-        cancelPendingRequest()
-        speechSynthesizer.stop()
-        messages.removeAll()
-        currentTranscript = ""
-        state = .idle
+        delegate?.didRequestReset()
     }
 
     func cancelPendingRequest() {
-        requestTask?.cancel()
-        requestTask = nil
-        if state == .processing {
-            state = .idle
-        }
+        delegate?.didRequestCancelPendingRequest()
     }
-    
+
     func requestPermissions() {
-        speechRecognizer.requestAuthorization()
+        delegate?.didRequestPermissions()
     }
 }
+
+// MARK: - View-protocol conformances
+// The Presenter drives these methods to update display state.
+
+extension ConversationViewModel: ConversationStateView {
+    public func display(_ viewModel: ConversationStateViewModel) {
+        state = viewModel.state
+    }
+}
+
+extension ConversationViewModel: ConversationMessagesView {
+    public func display(_ viewModel: ConversationMessagesViewModel) {
+        messages = viewModel.messages
+    }
+}
+
+extension ConversationViewModel: ConversationTranscriptView {
+    public func display(_ viewModel: ConversationTranscriptViewModel) {
+        currentTranscript = viewModel.transcript
+    }
+}
+
