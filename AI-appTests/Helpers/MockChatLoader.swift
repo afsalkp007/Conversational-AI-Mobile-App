@@ -5,7 +5,7 @@
 //  Created by Mohamed Afsal on 26/03/2026.
 //
 
-import AI_app
+import AIAppFeature
 
 final class MockChatLoader: ChatLoader {
     indirect enum Behavior {

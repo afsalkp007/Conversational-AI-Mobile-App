@@ -1,4 +1,5 @@
 import SwiftUI
+import AIAppFeature
 
 struct ContentView: View {
     @ObservedObject var viewModel: ConversationViewModel
@@ -47,4 +48,3 @@ struct ContentView: View {
         .padding(.bottom, 10)
     }
 }
-

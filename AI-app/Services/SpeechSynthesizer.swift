@@ -1,4 +1,5 @@
 import AVFoundation
+import AIAppFeature
 
 class SpeechSynthesizer: NSObject, AVSpeechSynthesizerDelegate, SpeechSynthesizing {
     private let synthesizer = AVSpeechSynthesizer()

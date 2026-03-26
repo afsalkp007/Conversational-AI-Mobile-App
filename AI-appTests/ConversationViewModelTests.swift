@@ -1,4 +1,4 @@
-import AI_app
+@testable import AIAppFeature
 import XCTest
 import Combine
 
@@ -84,4 +84,3 @@ final class ConversationViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.state, .idle)
     }
 }
-

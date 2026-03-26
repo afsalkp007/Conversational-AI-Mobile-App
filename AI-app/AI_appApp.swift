@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AIAppFeature
 
 // MARK: - Composition Root
 // Analogous to SceneDelegate in the Feed App.
@@ -36,4 +37,3 @@ struct AI_appApp: App {
         }
     }
 }
-

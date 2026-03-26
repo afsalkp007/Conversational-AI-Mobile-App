@@ -7,7 +7,7 @@ public enum ChatState: Equatable {
     case speaking
     case error(String)
     
-    var statusText: String {
+    public var statusText: String {
         switch self {
         case .idle: return "Tap to Speak"
         case .listening: return "Listening..."

@@ -1,4 +1,5 @@
 import SwiftUI
+import AIAppFeature
 
 struct ControlsView: View {
     @ObservedObject var viewModel: ConversationViewModel

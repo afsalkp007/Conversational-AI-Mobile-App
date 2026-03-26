@@ -2,6 +2,7 @@ import Foundation
 import Combine
 import Speech
 import AVFoundation
+import AIAppFeature
 
 class SpeechRecognizer: ObservableObject, SpeechRecognizing {
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))

@@ -1,4 +1,4 @@
-@testable import AI_app
+@testable import AIAppFeature
 import XCTest
 
 final class URLSessionHTTPClientTests: XCTestCase {

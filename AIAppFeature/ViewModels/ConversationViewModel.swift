@@ -11,7 +11,7 @@ import Combine
 public class ConversationViewModel: ObservableObject {
     @Published public var messages: [Message] = []
     @Published public var state: ChatState = .idle
-    @Published var currentTranscript: String = ""
+    @Published public var currentTranscript: String = ""
 
     /// Set by ConversationUIComposer — never set directly in views.
     /// Held strongly because the adapter must outlive the function scope of the Composer.
@@ -19,7 +19,7 @@ public class ConversationViewModel: ObservableObject {
 
     // MARK: - User actions (forwarded to delegate)
 
-    func startRecording() {
+    public func startRecording() {
         delegate?.didRequestStartRecording()
     }
 
@@ -31,15 +31,15 @@ public class ConversationViewModel: ObservableObject {
         delegate?.didRequestSendMessage(text)
     }
 
-    func resetConversation() {
+    public func resetConversation() {
         delegate?.didRequestReset()
     }
 
-    func cancelPendingRequest() {
+    public func cancelPendingRequest() {
         delegate?.didRequestCancelPendingRequest()
     }
 
-    func requestPermissions() {
+    public func requestPermissions() {
         delegate?.didRequestPermissions()
     }
 }
@@ -64,4 +64,3 @@ extension ConversationViewModel: ConversationTranscriptView {
         currentTranscript = viewModel.transcript
     }
 }
-

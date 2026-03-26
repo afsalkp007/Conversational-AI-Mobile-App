@@ -1,4 +1,5 @@
 import SwiftUI
+import AIAppFeature
 
 struct ChatView: View {
     @ObservedObject var viewModel: ConversationViewModel

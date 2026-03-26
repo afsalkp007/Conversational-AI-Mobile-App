@@ -5,7 +5,7 @@
 //  Created by Mohamed Afsal on 26/03/2026.
 //
 
-import AI_app
+import AIAppFeature
 import Combine
 
 final class MockSpeechRecognizer: SpeechRecognizing {
