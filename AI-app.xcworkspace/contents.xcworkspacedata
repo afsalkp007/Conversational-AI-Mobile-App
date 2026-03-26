@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../AIAppFeature/AIAppFeature.xcodeproj">
+      location = "group:AIAppFeature/AIAppFeature.xcodeproj">
    </FileRef>
    <FileRef
-      location = "self:">
+      location = "container:AI-app.xcodeproj">
    </FileRef>
 </Workspace>

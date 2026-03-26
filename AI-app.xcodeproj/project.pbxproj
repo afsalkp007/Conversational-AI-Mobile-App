@@ -7,26 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C980A9DD896E7CC9FE72094 /* ConversationUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0008A1B2C3D4E5F60008 /* ConversationUIComposer.swift */; };
-		3EEB4438BE1E2C2CB0B1D42E /* ConversationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0002A1B2C3D4E5F60002 /* ConversationPresenter.swift */; };
-		3F0DC9F6BFD24EAD9902E8B5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF8B2F754EE600B0FF26 /* HTTPClient.swift */; };
-		3FBC6A652A14BB1CD84F28B1 /* ChatMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */; };
-		49D4C95937054C9DC4639369 /* AIAppFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B592518ED346E00962DCD1D /* AIAppFeature.framework */; };
-		4FF8F5E77354792A7816821A /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF8C2F754EE600B0FF26 /* URLSessionHTTPClient.swift */; };
-		53608BFB43E6625994643780 /* ChatEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */; };
-		57F6F9DFDDBB489D30B35A24 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09D72EDB78E40074CBBC /* ConversationViewModel.swift */; };
-		594542232B1EACB826C9D293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1758E65891D6E9A318E512 /* Foundation.framework */; };
-		5E8B88E32361CB92F617D183 /* ChatServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0000A1B2C3D4E5F60001 /* ChatServiceProtocols.swift */; };
-		6D61172B0E6CC0B179C049D3 /* AIAppFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B592518ED346E00962DCD1D /* AIAppFeature.framework */; };
-		7DE51B73B9C5A3BFAF87D104 /* ChatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF892F754E8300B0FF26 /* ChatState.swift */; };
-		8E052820E56689B65462A00A /* ConversationPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0006A1B2C3D4E5F60006 /* ConversationPresentationAdapter.swift */; };
-		9C3EF0C44F7BC63B65ABB53B /* RemoteChatLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */; };
-		A0AC48E4184D00EA09296D30 /* AIAppFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B592518ED346E00962DCD1D /* AIAppFeature.framework */; };
-		B04367E0004E8912155A57CF /* ChatLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF852F754E6400B0FF26 /* ChatLoader.swift */; };
-		BE52AA3775D5ED5E606DB85A /* AIAppFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B592518ED346E00962DCD1D /* AIAppFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BE889344020DDB82EF2A0EA1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AAF862F754E6400B0FF26 /* Message.swift */; };
-		CE21374F8BDFFEE0B6114D1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1758E65891D6E9A318E512 /* Foundation.framework */; };
-		D0DCDE81021C9CB5D2139FE6 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4RE0004A1B2C3D4E5F60004 /* WeakRefVirtualProxy.swift */; };
+		12B8220105A6D7B0CD5E5598 /* AIAppFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 077703241EE3E6F1A53E12F3 /* AIAppFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F9E1DF58BC52A1BE3857272 /* AIAppFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077703241EE3E6F1A53E12F3 /* AIAppFeature.framework */; };
+		73A074235DCE5806CF8CF6F2 /* AIAppFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077703241EE3E6F1A53E12F3 /* AIAppFeature.framework */; };
 		F48646202F755AEF00009E1D /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461F2F755AEF00009E1D /* URLSessionHTTPClientTests.swift */; };
 		F48646212F755AEF00009E1D /* ChatMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461D2F755AEF00009E1D /* ChatMapperTests.swift */; };
 		F48646222F755AEF00009E1D /* ChatEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486461C2F755AEF00009E1D /* ChatEndpointTests.swift */; };
@@ -50,27 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		40011335DADF613B015B6970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F4AB09A22EDB69890074CBBC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C3908B1B9AF803C4EB2C122;
-			remoteInfo = AIAppFeature;
-		};
-		468BF8BD5673FC607B9B270D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F4AB09A22EDB69890074CBBC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C3908B1B9AF803C4EB2C122;
-			remoteInfo = AIAppFeature;
-		};
-		7CAFF828976A111ED2C0BF19 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F4AB09A22EDB69890074CBBC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C3908B1B9AF803C4EB2C122;
-			remoteInfo = AIAppFeature;
-		};
 		F4AB0A252EDB79B70074CBBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4AB09A22EDB69890074CBBC /* Project object */;
@@ -87,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BE52AA3775D5ED5E606DB85A /* AIAppFeature.framework in Embed Frameworks */,
+				12B8220105A6D7B0CD5E5598 /* AIAppFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,8 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B592518ED346E00962DCD1D /* AIAppFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AIAppFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49DEE5836C3F4DF2B10F8CDA /* AIAppFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AIAppFeatureTests.xctest; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		077703241EE3E6F1A53E12F3 /* AIAppFeature.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AIAppFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F486461C2F755AEF00009E1D /* ChatEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEndpointTests.swift; sourceTree = "<group>"; };
 		F486461D2F755AEF00009E1D /* ChatMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapperTests.swift; sourceTree = "<group>"; };
 		F486461E2F755AEF00009E1D /* RemoteChatLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteChatLoaderTests.swift; sourceTree = "<group>"; };
@@ -104,14 +65,6 @@
 		F48646262F755EE300009E1D /* MockSpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeechRecognizer.swift; sourceTree = "<group>"; };
 		F48646282F755F0A00009E1D /* MockSpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeechSynthesizer.swift; sourceTree = "<group>"; };
 		F486462A2F755F4B00009E1D /* MockChatLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChatLoader.swift; sourceTree = "<group>"; };
-		F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEndpoint.swift; sourceTree = "<group>"; };
-		F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapper.swift; sourceTree = "<group>"; };
-		F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteChatLoader.swift; sourceTree = "<group>"; };
-		F48AAF852F754E6400B0FF26 /* ChatLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLoader.swift; sourceTree = "<group>"; };
-		F48AAF862F754E6400B0FF26 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		F48AAF892F754E8300B0FF26 /* ChatState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatState.swift; sourceTree = "<group>"; };
-		F48AAF8B2F754EE600B0FF26 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		F48AAF8C2F754EE600B0FF26 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		F4AB09AA2EDB69890074CBBC /* AI-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AB09AD2EDB69890074CBBC /* AI_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_appApp.swift; sourceTree = "<group>"; };
 		F4AB09B12EDB698B0074CBBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,7 +74,6 @@
 		F4AB09CD2EDB78B00074CBBC /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
 		F4AB09CF2EDB78B00074CBBC /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		F4AB09D42EDB78CC0074CBBC /* ConversationViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewModelTests.swift; sourceTree = "<group>"; };
-		F4AB09D72EDB78E40074CBBC /* ConversationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
 		F4AB09DA2EDB79000074CBBC /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		F4AB09DB2EDB79000074CBBC /* BubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		F4AB09DC2EDB79000074CBBC /* ControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
@@ -129,29 +81,14 @@
 		F4AB0A212EDB79B70074CBBC /* AI-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
-		F4RE0000A1B2C3D4E5F60001 /* ChatServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServiceProtocols.swift; sourceTree = "<group>"; };
-		F4RE0002A1B2C3D4E5F60002 /* ConversationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationPresenter.swift; sourceTree = "<group>"; };
-		F4RE0004A1B2C3D4E5F60004 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
-		F4RE0006A1B2C3D4E5F60006 /* ConversationPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationPresentationAdapter.swift; sourceTree = "<group>"; };
-		F4RE0008A1B2C3D4E5F60008 /* ConversationUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationUIComposer.swift; sourceTree = "<group>"; };
-		FE1758E65891D6E9A318E512 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		255537074A89407F15F4CB4E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE21374F8BDFFEE0B6114D1B /* Foundation.framework in Frameworks */,
-				49D4C95937054C9DC4639369 /* AIAppFeature.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4AB09A72EDB69890074CBBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0AC48E4184D00EA09296D30 /* AIAppFeature.framework in Frameworks */,
+				1F9E1DF58BC52A1BE3857272 /* AIAppFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,104 +96,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D61172B0E6CC0B179C049D3 /* AIAppFeature.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDF9B1A7159D6C386EE2EAAF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				594542232B1EACB826C9D293 /* Foundation.framework in Frameworks */,
+				73A074235DCE5806CF8CF6F2 /* AIAppFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AEA39F2AB59922BFB6F40AF /* Chat API */ = {
-			isa = PBXGroup;
-			children = (
-				F48AAF7E2F754E3A00B0FF26 /* ChatEndpoint.swift */,
-				F48AAF7F2F754E3A00B0FF26 /* ChatMapper.swift */,
-				F48AAF802F754E3A00B0FF26 /* RemoteChatLoader.swift */,
-			);
-			path = "Chat API";
-			sourceTree = "<group>";
-		};
-		220830A7BC57714A1FD6AA7F /* AIAppFeature */ = {
-			isa = PBXGroup;
-			children = (
-				1AEA39F2AB59922BFB6F40AF /* Chat API */,
-				619F410C7ECCF8B9B3B39B97 /* Chat Feature */,
-				702AC518F27E9D738F34A8CC /* Chat Presentation */,
-				773D8BB6F5D88BA54B35FBB2 /* Composition */,
-				B14E977EF70C94BBB79732C9 /* Shared API */,
-				E584B19D93ABB898B78C8B23 /* ViewModels */,
-			);
-			path = AIAppFeature;
-			sourceTree = "<group>";
-		};
 		367516B15474F8E540FF09F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ECAEE4807FD6FDC6BD026A76 /* iOS */,
+				077703241EE3E6F1A53E12F3 /* AIAppFeature.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		619F410C7ECCF8B9B3B39B97 /* Chat Feature */ = {
-			isa = PBXGroup;
-			children = (
-				F48AAF852F754E6400B0FF26 /* ChatLoader.swift */,
-				F4RE0000A1B2C3D4E5F60001 /* ChatServiceProtocols.swift */,
-				F48AAF862F754E6400B0FF26 /* Message.swift */,
-			);
-			path = "Chat Feature";
-			sourceTree = "<group>";
-		};
-		702AC518F27E9D738F34A8CC /* Chat Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				F48AAF892F754E8300B0FF26 /* ChatState.swift */,
-				F4RE0002A1B2C3D4E5F60002 /* ConversationPresenter.swift */,
-			);
-			path = "Chat Presentation";
-			sourceTree = "<group>";
-		};
-		773D8BB6F5D88BA54B35FBB2 /* Composition */ = {
-			isa = PBXGroup;
-			children = (
-				F4RE0006A1B2C3D4E5F60006 /* ConversationPresentationAdapter.swift */,
-				F4RE0008A1B2C3D4E5F60008 /* ConversationUIComposer.swift */,
-				F4RE0004A1B2C3D4E5F60004 /* WeakRefVirtualProxy.swift */,
-			);
-			path = Composition;
-			sourceTree = "<group>";
-		};
-		B14E977EF70C94BBB79732C9 /* Shared API */ = {
-			isa = PBXGroup;
-			children = (
-				F48AAF8B2F754EE600B0FF26 /* HTTPClient.swift */,
-				F48AAF8C2F754EE600B0FF26 /* URLSessionHTTPClient.swift */,
-			);
-			path = "Shared API";
-			sourceTree = "<group>";
-		};
-		E584B19D93ABB898B78C8B23 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				F4AB09D72EDB78E40074CBBC /* ConversationViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		ECAEE4807FD6FDC6BD026A76 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				FE1758E65891D6E9A318E512 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		F48646252F755ED800009E1D /* Helpers */ = {
@@ -276,7 +128,6 @@
 				F4AB0A222EDB79B70074CBBC /* AI-appTests */,
 				F4AB09AB2EDB69890074CBBC /* Products */,
 				367516B15474F8E540FF09F7 /* Frameworks */,
-				220830A7BC57714A1FD6AA7F /* AIAppFeature */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,8 +136,6 @@
 			children = (
 				F4AB09AA2EDB69890074CBBC /* AI-app.app */,
 				F4AB0A212EDB79B70074CBBC /* AI-appTests.xctest */,
-				2B592518ED346E00962DCD1D /* AIAppFeature.framework */,
-				49DEE5836C3F4DF2B10F8CDA /* AIAppFeatureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,53 +199,7 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		8186270A16430902BC05364F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		1C3908B1B9AF803C4EB2C122 /* AIAppFeature */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 159BFACE0AE9811C1AEEC0CF /* Build configuration list for PBXNativeTarget "AIAppFeature" */;
-			buildPhases = (
-				8186270A16430902BC05364F /* Headers */,
-				A73DB7719430BDA102C36067 /* Sources */,
-				FDF9B1A7159D6C386EE2EAAF /* Frameworks */,
-				F4BB06C18B5A8321B8579969 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AIAppFeature;
-			productName = AIAppFeature;
-			productReference = 2B592518ED346E00962DCD1D /* AIAppFeature.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		464E414857DBA98F1AB72A83 /* AIAppFeatureTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 484FC2E58810F1C2DA7AEB53 /* Build configuration list for PBXNativeTarget "AIAppFeatureTests" */;
-			buildPhases = (
-				DF16F0388A72F7EC04F7A7B0 /* Sources */,
-				255537074A89407F15F4CB4E /* Frameworks */,
-				AD56524DF81AD24F05F38267 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B138349FEC1F9BA9835859E3 /* PBXTargetDependency */,
-			);
-			name = AIAppFeatureTests;
-			productName = AIAppFeatureTests;
-			productReference = 49DEE5836C3F4DF2B10F8CDA /* AIAppFeatureTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		F4AB09A92EDB69890074CBBC /* AI-app */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4AB09B82EDB698B0074CBBC /* Build configuration list for PBXNativeTarget "AI-app" */;
@@ -409,7 +212,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				260AD672EC17523AA4FC208D /* PBXTargetDependency */,
 			);
 			name = "AI-app";
 			productName = "AI-app";
@@ -428,7 +230,6 @@
 			);
 			dependencies = (
 				F4AB0A262EDB79B70074CBBC /* PBXTargetDependency */,
-				F844368581BFC345342CC27A /* PBXTargetDependency */,
 			);
 			name = "AI-appTests";
 			productName = "AI-appTests";
@@ -469,20 +270,11 @@
 			targets = (
 				F4AB09A92EDB69890074CBBC /* AI-app */,
 				F4AB0A202EDB79B70074CBBC /* AI-appTests */,
-				1C3908B1B9AF803C4EB2C122 /* AIAppFeature */,
-				464E414857DBA98F1AB72A83 /* AIAppFeatureTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AD56524DF81AD24F05F38267 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4AB09A82EDB69890074CBBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,44 +292,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4BB06C18B5A8321B8579969 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A73DB7719430BDA102C36067 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53608BFB43E6625994643780 /* ChatEndpoint.swift in Sources */,
-				3FBC6A652A14BB1CD84F28B1 /* ChatMapper.swift in Sources */,
-				9C3EF0C44F7BC63B65ABB53B /* RemoteChatLoader.swift in Sources */,
-				B04367E0004E8912155A57CF /* ChatLoader.swift in Sources */,
-				5E8B88E32361CB92F617D183 /* ChatServiceProtocols.swift in Sources */,
-				BE889344020DDB82EF2A0EA1 /* Message.swift in Sources */,
-				7DE51B73B9C5A3BFAF87D104 /* ChatState.swift in Sources */,
-				3EEB4438BE1E2C2CB0B1D42E /* ConversationPresenter.swift in Sources */,
-				8E052820E56689B65462A00A /* ConversationPresentationAdapter.swift in Sources */,
-				0C980A9DD896E7CC9FE72094 /* ConversationUIComposer.swift in Sources */,
-				D0DCDE81021C9CB5D2139FE6 /* WeakRefVirtualProxy.swift in Sources */,
-				3F0DC9F6BFD24EAD9902E8B5 /* HTTPClient.swift in Sources */,
-				4FF8F5E77354792A7816821A /* URLSessionHTTPClient.swift in Sources */,
-				57F6F9DFDDBB489D30B35A24 /* ConversationViewModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF16F0388A72F7EC04F7A7B0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4AB09A62EDB69890074CBBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -572,118 +329,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		260AD672EC17523AA4FC208D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AIAppFeature;
-			target = 1C3908B1B9AF803C4EB2C122 /* AIAppFeature */;
-			targetProxy = 7CAFF828976A111ED2C0BF19 /* PBXContainerItemProxy */;
-		};
-		B138349FEC1F9BA9835859E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AIAppFeature;
-			target = 1C3908B1B9AF803C4EB2C122 /* AIAppFeature */;
-			targetProxy = 40011335DADF613B015B6970 /* PBXContainerItemProxy */;
-		};
 		F4AB0A262EDB79B70074CBBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F4AB09A92EDB69890074CBBC /* AI-app */;
 			targetProxy = F4AB0A252EDB79B70074CBBC /* PBXContainerItemProxy */;
 		};
-		F844368581BFC345342CC27A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AIAppFeature;
-			target = 1C3908B1B9AF803C4EB2C122 /* AIAppFeature */;
-			targetProxy = 468BF8BD5673FC607B9B270D /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F9FA1BFDB04FDB0CBC4152E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.aiapp.AIAppFeatureTests;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "";
-			};
-			name = Debug;
-		};
-		168DA754B8EE5641F4371244 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.aiapp.AIAppFeatureTests;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CD8614AEF0E02CEEE83E9F66 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GENERATE_INFOPLIST_FILE = YES;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.aiapp.AIAppFeature;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E46375C60609A378C8397A8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GENERATE_INFOPLIST_FILE = YES;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.aiapp.AIAppFeature;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		F4AB09B62EDB698B0074CBBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -899,24 +552,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		159BFACE0AE9811C1AEEC0CF /* Build configuration list for PBXNativeTarget "AIAppFeature" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E46375C60609A378C8397A8E /* Release */,
-				CD8614AEF0E02CEEE83E9F66 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		484FC2E58810F1C2DA7AEB53 /* Build configuration list for PBXNativeTarget "AIAppFeatureTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				168DA754B8EE5641F4371244 /* Release */,
-				0F9FA1BFDB04FDB0CBC4152E /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		F4AB09A52EDB69890074CBBC /* Build configuration list for PBXProject "AI-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
