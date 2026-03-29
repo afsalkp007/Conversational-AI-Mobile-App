@@ -1,10 +1,16 @@
 import SwiftUI
 import Conversation
 
-struct ContentView: View {
-    @ObservedObject var viewModel: ConversationViewModel
+/// Main SwiftUI shell for the voice chat experience. Lives in `ConversationUI` so the core
+/// `Conversation` module stays free of SwiftUI (see Essential Feed’s Feed vs EssentialFeediOS split).
+public struct ContentView: View {
+    @ObservedObject private var viewModel: ConversationViewModel
 
-    var body: some View {
+    public init(viewModel: ConversationViewModel) {
+        _viewModel = ObservedObject(wrappedValue: viewModel)
+    }
+
+    public var body: some View {
         ZStack {
             LinearGradient(
                 colors: [

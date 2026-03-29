@@ -1,10 +1,11 @@
 import SwiftUI
+import UIKit
 import Conversation
 
 struct ControlsView: View {
     @ObservedObject var viewModel: ConversationViewModel
     @State private var typedText: String = ""
-    
+
     var body: some View {
         VStack {
             transcriptCard
@@ -20,7 +21,7 @@ struct ControlsView: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity)
-            
+
             Button(action: {
                 UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                 if viewModel.state == .listening {
@@ -34,7 +35,7 @@ struct ControlsView: View {
                         .fill(viewModel.state == .listening ? Color.red : Color.accentColor)
                         .frame(width: 80, height: 80)
                         .shadow(radius: 5)
-                    
+
                     Image(systemName: viewModel.state == .listening ? "stop.fill" : "mic.fill")
                         .font(.title)
                         .foregroundColor(.white)
@@ -44,7 +45,7 @@ struct ControlsView: View {
             .opacity(viewModel.state == .processing || viewModel.state == .speaking ? 0.5 : 1.0)
             .accessibilityLabel(viewModel.state == .listening ? "Stop recording" : "Start recording")
             .accessibilityHint("Double tap to toggle microphone")
-            
+
             HStack(spacing: 8) {
                 if viewModel.state == .processing {
                     ProgressView()

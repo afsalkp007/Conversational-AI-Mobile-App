@@ -3,7 +3,7 @@ import Conversation
 
 struct ChatView: View {
     @ObservedObject var viewModel: ConversationViewModel
-    
+
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {

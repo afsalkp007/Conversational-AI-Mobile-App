@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Conversation
+import ConversationUI
 
 // MARK: - Composition Root
 // Analogous to SceneDelegate in the Feed App.

@@ -3,13 +3,13 @@ import Conversation
 
 struct BubbleView: View {
     let message: Message
-    
+
     var body: some View {
         HStack {
             if message.role == .user {
                 Spacer()
             }
-            
+
             Text(message.content)
                 .padding(.vertical, 10)
                 .padding(.horizontal, 12)
@@ -22,7 +22,7 @@ struct BubbleView: View {
                 )
                 .shadow(color: .black.opacity(0.05), radius: 6, x: 0, y: 2)
                 .frame(maxWidth: 320, alignment: message.role == .user ? .trailing : .leading)
-            
+
             if message.role == .assistant {
                 Spacer()
             }

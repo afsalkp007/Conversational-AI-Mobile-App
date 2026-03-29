@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5C0B0452EDB79C20074CB01 /* ConversationUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5C0B0472EDB79C20074CB01 /* ConversationUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */; };
 		12B8220105A6D7B0CD5E5598 /* Conversation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 077703241EE3E6F1A53E12F3 /* Conversation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F9E1DF58BC52A1BE3857272 /* Conversation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077703241EE3E6F1A53E12F3 /* Conversation.framework */; };
 		73A074235DCE5806CF8CF6F2 /* Conversation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077703241EE3E6F1A53E12F3 /* Conversation.framework */; };
@@ -23,10 +25,6 @@
 		F4AB09C22EDB69AB0074CBBC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F4AB09BD2EDB69AA0074CBBC /* README.md */; };
 		F4AB09D02EDB78B00074CBBC /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09CD2EDB78B00074CBBC /* SpeechSynthesizer.swift */; };
 		F4AB09D22EDB78B00074CBBC /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09CF2EDB78B00074CBBC /* SpeechRecognizer.swift */; };
-		F4AB09DE2EDB79000074CBBC /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09DA2EDB79000074CBBC /* ChatView.swift */; };
-		F4AB09DF2EDB79000074CBBC /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09DB2EDB79000074CBBC /* BubbleView.swift */; };
-		F4AB09E02EDB79000074CBBC /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09DC2EDB79000074CBBC /* ControlsView.swift */; };
-		F4AB09E12EDB79000074CBBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09DD2EDB79000074CBBC /* ContentView.swift */; };
 		F4AB0A2A2EDB79CE0074CBBC /* ConversationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09D42EDB78CC0074CBBC /* ConversationViewModelTests.swift */; };
 		F4C0A101A1B2C3D4E5F60101 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */; };
 		F4C0A105A1B2C3D4E5F60105 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */; };
@@ -49,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F5C0B0452EDB79C20074CB01 /* ConversationUI.framework in Embed Frameworks */,
 				12B8220105A6D7B0CD5E5598 /* Conversation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -57,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ConversationUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		077703241EE3E6F1A53E12F3 /* Conversation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Conversation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F486461C2F755AEF00009E1D /* ChatEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEndpointTests.swift; sourceTree = "<group>"; };
 		F486461D2F755AEF00009E1D /* ChatMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapperTests.swift; sourceTree = "<group>"; };
@@ -74,10 +74,6 @@
 		F4AB09CD2EDB78B00074CBBC /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
 		F4AB09CF2EDB78B00074CBBC /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		F4AB09D42EDB78CC0074CBBC /* ConversationViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewModelTests.swift; sourceTree = "<group>"; };
-		F4AB09DA2EDB79000074CBBC /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		F4AB09DB2EDB79000074CBBC /* BubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
-		F4AB09DC2EDB79000074CBBC /* ControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
-		F4AB09DD2EDB79000074CBBC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4AB0A212EDB79B70074CBBC /* ConversationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConversationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
@@ -88,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C0B0472EDB79C20074CB01 /* ConversationUI.framework in Frameworks */,
 				1F9E1DF58BC52A1BE3857272 /* Conversation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +103,7 @@
 		367516B15474F8E540FF09F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */,
 				077703241EE3E6F1A53E12F3 /* Conversation.framework */,
 			);
 			name = Frameworks;
@@ -146,7 +144,6 @@
 				F4AB09AD2EDB69890074CBBC /* ConversationAppApp.swift */,
 				F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */,
 				F4AB09BD2EDB69AA0074CBBC /* README.md */,
-				F4AB09D92EDB78F80074CBBC /* Views */,
 				F4AB09CC2EDB78930074CBBC /* Services */,
 				F4AB09B12EDB698B0074CBBC /* Assets.xcassets */,
 				F4AB09B32EDB698B0074CBBC /* Preview Content */,
@@ -171,17 +168,6 @@
 				F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		F4AB09D92EDB78F80074CBBC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F4AB09DB2EDB79000074CBBC /* BubbleView.swift */,
-				F4AB09DA2EDB79000074CBBC /* ChatView.swift */,
-				F4AB09DD2EDB79000074CBBC /* ContentView.swift */,
-				F4AB09DC2EDB79000074CBBC /* ControlsView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		F4AB0A222EDB79B70074CBBC /* ConversationAppTests */ = {
@@ -301,13 +287,9 @@
 			files = (
 				F4AB09D02EDB78B00074CBBC /* SpeechSynthesizer.swift in Sources */,
 				F4C0A105A1B2C3D4E5F60105 /* AudioSessionManager.swift in Sources */,
-				F4AB09E02EDB79000074CBBC /* ControlsView.swift in Sources */,
-				F4AB09DF2EDB79000074CBBC /* BubbleView.swift in Sources */,
 				F4AB09D22EDB78B00074CBBC /* SpeechRecognizer.swift in Sources */,
 				F4AB09AE2EDB69890074CBBC /* ConversationAppApp.swift in Sources */,
 				F4C0A101A1B2C3D4E5F60101 /* AppSecrets.swift in Sources */,
-				F4AB09E12EDB79000074CBBC /* ContentView.swift in Sources */,
-				F4AB09DE2EDB79000074CBBC /* ChatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
