@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5C0B0452EDB79C20074CB01 /* ConversationUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F5C0B0472EDB79C20074CB01 /* ConversationUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */; };
 		12B8220105A6D7B0CD5E5598 /* Conversation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 077703241EE3E6F1A53E12F3 /* Conversation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F9E1DF58BC52A1BE3857272 /* Conversation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077703241EE3E6F1A53E12F3 /* Conversation.framework */; };
 		73A074235DCE5806CF8CF6F2 /* Conversation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077703241EE3E6F1A53E12F3 /* Conversation.framework */; };
@@ -22,12 +20,14 @@
 		F4AB09AE2EDB69890074CBBC /* ConversationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09AD2EDB69890074CBBC /* ConversationAppApp.swift */; };
 		F4AB09B22EDB698B0074CBBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AB09B12EDB698B0074CBBC /* Assets.xcassets */; };
 		F4AB09B52EDB698B0074CBBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AB09B42EDB698B0074CBBC /* Preview Assets.xcassets */; };
-		F4AB09C22EDB69AB0074CBBC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F4AB09BD2EDB69AA0074CBBC /* README.md */; };
 		F4AB09D02EDB78B00074CBBC /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09CD2EDB78B00074CBBC /* SpeechSynthesizer.swift */; };
 		F4AB09D22EDB78B00074CBBC /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09CF2EDB78B00074CBBC /* SpeechRecognizer.swift */; };
 		F4AB0A2A2EDB79CE0074CBBC /* ConversationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB09D42EDB78CC0074CBBC /* ConversationViewModelTests.swift */; };
 		F4C0A101A1B2C3D4E5F60101 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */; };
 		F4C0A105A1B2C3D4E5F60105 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */; };
+		F4F42D1C2F7AD6ED0067FBA4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F4F42D1B2F7AD6ED0067FBA4 /* README.md */; };
+		F5C0B0452EDB79C20074CB01 /* ConversationUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5C0B0472EDB79C20074CB01 /* ConversationUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ConversationUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		077703241EE3E6F1A53E12F3 /* Conversation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Conversation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F486461C2F755AEF00009E1D /* ChatEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEndpointTests.swift; sourceTree = "<group>"; };
 		F486461D2F755AEF00009E1D /* ChatMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapperTests.swift; sourceTree = "<group>"; };
@@ -69,7 +68,6 @@
 		F4AB09AD2EDB69890074CBBC /* ConversationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationAppApp.swift; sourceTree = "<group>"; };
 		F4AB09B12EDB698B0074CBBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4AB09B42EDB698B0074CBBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F4AB09BD2EDB69AA0074CBBC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F4AB09C72EDB753E0074CBBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4AB09CD2EDB78B00074CBBC /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
 		F4AB09CF2EDB78B00074CBBC /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
@@ -77,6 +75,8 @@
 		F4AB0A212EDB79B70074CBBC /* ConversationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConversationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		F4C0A104A1B2C3D4E5F60105 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		F4F42D1B2F7AD6ED0067FBA4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F5C0B0462EDB79C20074CB01 /* ConversationUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ConversationUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				F4AB09AD2EDB69890074CBBC /* ConversationAppApp.swift */,
+				F4F42D1B2F7AD6ED0067FBA4 /* README.md */,
 				F4C0A100A1B2C3D4E5F60101 /* AppSecrets.swift */,
-				F4AB09BD2EDB69AA0074CBBC /* README.md */,
 				F4AB09CC2EDB78930074CBBC /* Services */,
 				F4AB09B12EDB698B0074CBBC /* Assets.xcassets */,
 				F4AB09B32EDB698B0074CBBC /* Preview Content */,
@@ -265,8 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F42D1C2F7AD6ED0067FBA4 /* README.md in Resources */,
 				F4AB09B52EDB698B0074CBBC /* Preview Assets.xcassets in Resources */,
-				F4AB09C22EDB69AB0074CBBC /* README.md in Resources */,
 				F4AB09B22EDB698B0074CBBC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +445,7 @@
 				DEVELOPMENT_TEAM = SC3D86JVL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ConversationApp/Info.plist";
+				INFOPLIST_FILE = ConversationApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -456,7 +456,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.afsal.InstagramLikeFeed.ConversationApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.InstagramLikeFeed.ConversationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -477,7 +477,7 @@
 				DEVELOPMENT_TEAM = SC3D86JVL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ConversationApp/Info.plist";
+				INFOPLIST_FILE = ConversationApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -488,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.afsal.InstagramLikeFeed.ConversationApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.InstagramLikeFeed.ConversationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -505,7 +505,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.afsal.aiapp.ConversationAppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.aiapp.ConversationAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -522,7 +522,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.afsal.aiapp.ConversationAppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.aiapp.ConversationAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
