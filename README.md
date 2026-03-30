@@ -247,7 +247,7 @@ Then the app should fail with a microphone availability error
 
 ## Flowcharts
 
-![Conversation Flowchart](../../chat_flowchart.png)
+![Conversation Flowchart](./chat_flowchart.png)
 
 ## Architecture
 
@@ -255,7 +255,7 @@ The project is split so business rules and request orchestration can be tested w
 
 ### Architecture Overview
 
-![Architecture Overview](../../architecture.png)
+![Architecture Overview](./architecture.png)
 
 ### Module Responsibilities
 
