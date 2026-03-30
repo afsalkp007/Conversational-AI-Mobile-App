@@ -1,5 +1,7 @@
 # Conversational AI Mobile App Case Study
 
+[![CI-iOS](https://github.com/afsalkp007/Conversational-AI-Mobile-App/actions/workflows/CI-iOS.yml/badge.svg)](https://github.com/afsalkp007/Conversational-AI-Mobile-App/actions/workflows/CI-iOS.yml)
+
 This project explores how to build a native iOS conversational assistant with a clean, testable architecture. The app captures spoken input, transcribes it on-device with Apple speech frameworks, sends conversation context to OpenAI, and speaks the assistant response back to the user.
 
 The implementation follows the same spirit as `essential-feed-case-study`: describe the product behavior as specs first, isolate details behind protocol boundaries, and keep the UI driven by presentation models instead of service logic.
